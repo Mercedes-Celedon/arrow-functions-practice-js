@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <li>
+            <span class="material-symbols-outlined">menu</span>
+        </li>
+        <li class="logo">MIAU</li>
+        <li>
+            <p>Search</p> <span class="material-symbols-outlined">search</span>
+        </li>
+        <li>
+            <span class="material-symbols-outlined">shopping_cart</span>
+        </li>
+    </header>
+    <section class="itemBox">
+            <img class="image"src="https://images.unsplash.com/photo-1638513848528-fe762cee75b2" alt="">
+        <div class="description">
+            <div class="descriptionBox">
+            <h1>Cat Hat</h1>
+            <h2>Mostaza | 8080/206/305</h2>
+            <hr>
+            <p>Vestido túnica confeccionado en hilatura con mezcla de lino. Escote redondo y manga sisa. Bolsillos laterales ocultos en costura. Bajo recto con aberturas.</p>
+            <h3 id="unitaryPrice">59.95</h3><h3>€</h3> 
+            </div>
+            <div class="counterBox">
+                <button id="substract">-</button>
+                <h3 id="counter">0</h3><h3>€</h3>
+                <button id="add">+</button>
+            </div>
+            
+            <button class="agregarCarrito" id="agregarCarrito">Agregar</button>
+        </div>
+    </section>
+    <modal class="modal" id="modal">
+        <span class="cerrar" id="cerrar">X</span>
+        <h2>Producto añadido al carrito</h2>
+        <div class="itemsBox">
+            <div class="items">
+                <h3>Cantidad:</h3><h3 id="cantidadProductos">0</h3>
+            </div>
+            <div class="items">
+                <h3>Total: </h3><h3 id="counterModal">0</h3><h3>€</h3>
+            </div>
+        </div>
+    </modal>
+    <footer>
+        
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

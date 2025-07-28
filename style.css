@@ -1,0 +1,143 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo{
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: -8px;
+    font-size: 90px;
+    font-weight: 600;
+}
+header{
+    display:grid;
+    grid-template-columns: 5% 70% 15% 5%;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+header > li:first-of-type > span{
+    font-size: 3.5rem;
+}
+header > li > span{
+    font-size: 2.3rem;
+}
+header > li > p{
+    padding: 20px 0;
+    font-size: 18px;
+}
+.itemBox{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 0 80px;
+}
+.image{
+    width: 30%;
+    height: 450px;
+    object-fit: cover;
+    padding: 20px 0 0;
+}
+.description{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.descriptionBox > h3{
+    display: inline;
+}
+.descriptionBox{
+    width: 100%;
+    padding-bottom: 40px;
+}
+.counterBox{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 50%;
+}
+.agregarCarrito{
+    width: 40%;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 20px;
+}
+.agregarCarrito:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
+}
+#substract, #add{
+    padding: 5px 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
+    border: 1px solid white;
+    font-size: 30px;
+}
+
+#substract:hover, #add:hover{
+    padding: 5px 20px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 30px;
+    color: rgb(0,0,0);
+}
+h1{
+    font-size: 40px;
+}
+h3, h2{
+    font-size: 20px;
+}
+.modal{
+    display: none;
+}
+.modalOn{
+    display: block;
+    background: rgba(245, 245, 245, 0.961);
+    color: #000000;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    height: 40%;
+    width: 30%;
+    transition: all .5s;
+    padding:10px 25px 40px 25px;
+}
+.modalOn > h2{
+    padding-top: 40px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+}
+.itemsBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 10px;
+    align-items: center;
+}
+ .items > h3{
+    display: inline;
+    font-size: 15px;
+ }
+.cerrar {
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10%;
+    padding: 10px 20px;
+    background-color: #000;
+}
+.cerrar:hover,
+.cerrar:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #fff;
+}
